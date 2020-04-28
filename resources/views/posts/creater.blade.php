@@ -4,6 +4,7 @@
 
 
 @include('partial.errors')
+<script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 
 <div class="panel panel-default">
         <div class="panel-heading">
@@ -65,6 +66,11 @@
         </div>
 
 </div>
+<script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'content' );
+            </script>
 
 
 

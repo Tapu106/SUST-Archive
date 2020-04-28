@@ -9,8 +9,9 @@
                             Title
                         </th>
                         <th>
-                            Content
+                            User 
                         </th>
+                      
                        
                     </thead>
     
@@ -20,7 +21,8 @@
                             <td> {{  $post->title }} </td>
                             <!-- <td>Edit</td> -->
                             <!-- <td>Delete</td> -->
-                            <td>{{ $post->created_at }}</td>
+                            <td>{{ $post->user->name }}</td>
+                            <td><a href="{{ route('post', ['slug' => $post->slug ]) }}" class="btn btn-primary pull-right">view</a></td>
                            
                         
                            

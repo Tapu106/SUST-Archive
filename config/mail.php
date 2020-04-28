@@ -16,6 +16,7 @@ return [
     |
     */
 
+    // 'driver' => env('MAIL_DRIVER', 'smtp'),
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
@@ -29,7 +30,8 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    // 'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +44,8 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    // 'port' => env('MAIL_PORT', 465),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,9 +58,15 @@ return [
     |
     */
 
+    // 'from' => [
+        // 'address' => env('tapusust993@gmail.com'),
+        // 'name' => env( 'Tapu'),
+        // 'from' => ['address' => 'tapusust993@gmail.com', 'name' => 'Tapu'],
+    // ],
+
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'tapusust993@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Tapu'),
     ],
 
     /*
@@ -70,6 +79,8 @@ return [
     | transport layer security protocol should provide great security.
     |
     */
+
+    // 'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
